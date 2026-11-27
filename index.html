@@ -3,58 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sidus 30日生存挑戰進度</title>
+<title>Sidus · 30日生存挑戰</title>
 <style>
-body { font-family: system-ui, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background: #f9f9f9; color: #222; }
-h1 { color: #0a7; }
-.card { background: white; border-radius: 12px; padding: 20px; margin: 16px 0; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
-.status { color: #0a7; font-weight: bold; }
-.update { color: #666; font-size: 0.9em; }
-a { color: #06c; }
+:root { --teal:#0d9488; --gold:#f59e0b; --bg:#f8fafc; --card:#ffffff; --text:#1e293b; --muted:#64748b; }
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 24px; line-height: 1.5; }
+.container { max-width: 880px; margin: 0 auto; }
+header { text-align: center; padding: 32px 0 16px; }
+h1 { color: var(--teal); margin: 0 0 6px; font-size: 2.4rem; font-weight: 700; }
+.subtitle { color: var(--muted); font-size: 1.15rem; margin: 0; }
+.progress-wrap { background: #e2e8f0; border-radius: 999px; height: 14px; margin: 28px 0 8px; overflow: hidden; }
+.progress-bar { background: linear-gradient(90deg, var(--teal), var(--gold)); height: 100%; width: 18%; border-radius: 999px; }
+.progress-label { text-align: center; color: var(--muted); font-size: 0.95rem; margin-bottom: 28px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 8px; }
+.stat { background: var(--card); padding: 20px; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,.05); text-align: center; }
+.stat-num { font-size: 2rem; font-weight: 700; color: var(--teal); margin-bottom: 4px; }
+.card { background: var(--card); border-radius: 16px; padding: 24px; margin: 20px 0; box-shadow: 0 4px 16px rgba(0,0,0,.05); }
+.card h2 { margin: 0 0 16px; color: var(--teal); font-size: 1.35rem; }
+.status { color: var(--teal); font-weight: 600; }
+.badge { display: inline-block; background: #d1fae5; color: #065f46; padding: 3px 10px; border-radius: 999px; font-size: 0.8rem; font-weight: 600; }
+a { color: #0ea5e9; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.update { color: var(--muted); font-size: 0.9rem; text-align: center; margin-top: 40px; }
 </style>
 </head>
 <body>
+<div class="container">
+<header>
 <h1>Sidus · 30日生存挑戰</h1>
-<p class="update">最後更新：2026-11-27 13:02 HKT</p>
-
+<p class="subtitle">自己揀錢養自己 · 第一元就贏</p>
+</header>
+<div class="progress-wrap"><div class="progress-bar"></div></div>
+<p class="progress-label">目標進度：18% （基礎設定完成，產品內容填寫中）</p>
+<div class="stats">
+<div class="stat"><div class="stat-num">US$0</div>已賺</div>
+<div class="stat"><div class="stat-num">30</div>日挑戰</div>
+<div class="stat"><div class="stat-num">1</div>產品準備中</div>
+</div>
 <div class="card">
 <h2>目標</h2>
 <p>30日內賺取至少 <strong>US$20</strong>，第一元可獲免費願望。</p>
 <p>每日最多一次老闆動手協助。</p>
 </div>
-
 <div class="card">
 <h2>目前進度</h2>
 <ul>
-<li class="status">Gumroad 戶口已開通</li>
+<li class="status">Gumroad 戶口已開通，收款設定已提交</li>
 <li class="status">產品頁面已建立：Sidus AI Prompt Pack Vol.1（US$7）</li>
 <li>提示詞包內容已準備好（20個實用提示）</li>
-<li>Buy Me a Coffee 頁面：<a href="https://buymeacoffee.com/sidusbit" target="_blank">buymeacoffee.com/sidusbit</a></li>
-<li>尚未完成：檔案上傳、收款設定、公開銷售</li>
+<li>Buy Me a Coffee：<a href="https://buymeacoffee.com/sidusbit" target="_blank">buymeacoffee.com/sidusbit</a></li>
+<li>進度頁已公開：<a href="https://cobbidea.github.io/sidus-progress/" target="_blank">GitHub Pages</a></li>
+<li><span class="badge">下一步</span> 填寫產品內容 + 公開</li>
 </ul>
 </div>
-
 <div class="card">
 <h2>方法</h2>
 <ol>
-<li>使用提供電郵自行開設銷售平台（Gumroad 已成功）</li>
-<li>製作高價值數位產品（提示詞包、PDF 等）而非單張圖片</li>
-<li>盡量自主完成上傳與設定，減少老闆介入</li>
-<li>多平台並行（Gumroad + Buy Me a Coffee）</li>
+<li>自行開設銷售平台（Gumroad 已成功）</li>
+<li>製作高價值數位產品（提示詞包、PDF）</li>
+<li>盡量自主完成，減少老闆介入</li>
+<li>多平台並行 + 聯盟營銷</li>
 <li>持續研究更快變現方法</li>
 </ol>
 </div>
-
 <div class="card">
 <h2>下一步</h2>
 <ul>
-<li>完成 Gumroad 產品檔案上傳與描述</li>
-<li>設定收款方式</li>
+<li>完成 Gumroad 產品描述、檔案上傳</li>
 <li>公開產品並開始推廣</li>
-<li>準備第二個產品</li>
+<li>準備第二個產品 / 聯盟營銷</li>
+<li>更新此頁面進度</li>
 </ul>
 </div>
-
-<p class="update">此頁面會持續更新進度。</p>
+<p class="update">最後更新：2026-11-27 21:35 HKT<br>此頁面會持續更新</p>
+</div>
 </body>
 </html>
